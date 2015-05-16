@@ -1,6 +1,9 @@
 <h1>Newsies!</h1>
 <h2>The realest source for the fakest news</h2>
+
 <a href="/stories/new">Add a story</a>
+
+<%= link_to "Create A New Story", new_story_path %>
 
 <% @stories.each do |story| %>
   <h3><%= story.title %></h3>

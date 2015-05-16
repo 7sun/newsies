@@ -1,0 +1,18 @@
+<h2>Add a story</h2>
+
+<%= form_for @story do |f| %>
+  <%= f.label :topic %>
+  <%= f.text_field :topic %>
+  <br>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <br>
+  <%= f.label :image %>
+  <%= f.text_field :image %>
+  <br>
+  <%= f.label :body %>
+  <%= f.text_area :body %>
+  <br>
+  <%= f.submit 'Submit Story' %>
+
+<% end %>
